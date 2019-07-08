@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/signup"
+    tools:context=".Signup">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <android.support.design.widget.TextInputEditText
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textColor="#bfdad1d1"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Enter a valid Email ID"
+        android:padding="15dp"
+        android:inputType="text"
+        android:textColorHint="#bfdad1d1"
+        android:id="@+id/signet1"
+        />
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/signet1"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textColor="#bfdad1d1"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Create a password"
+        android:padding="15dp"
+        android:textColorHint="#bfdad1d1"
+        android:id="@+id/signet2" />
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/signet2"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textColor="#bfdad1d1"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Confirm password"
+        android:padding="15dp"
+        android:textColorHint="#bfdad1d1"
+        android:id="@+id/signet3" />
+
+            <Button
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/signet3"
+                android:textStyle="bold"
+                android:textColor="#e40d0000"
+                android:background="@drawable/rounded_button"
+                android:fontFamily="@font/montserratlight"
+                android:text="Sign Up"
+                android:layout_marginTop="40dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/signupbtn"/>
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

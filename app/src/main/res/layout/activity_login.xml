@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:orientation="vertical"
+    tools:context=".login">
+
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textColor="#f7dad1d1"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Username"
+        android:padding="15dp"
+        android:textColorHint="#f7dad1d1"
+        android:id="@+id/et1"
+        android:inputType="text"
+        app:errorEnabled="true"
+        android:maxLines="1"/>
+
+    <android.support.design.widget.TextInputEditText
+
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/et1"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textColor="#f7dad1d1"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Password"
+        android:padding="15dp"
+        android:textColorHint="#f7dad1d1"
+        android:id="@+id/et2"
+        app:errorEnabled="true"
+        android:maxLines="1"
+        />
+
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/et2"
+        android:textStyle="bold"
+        android:textColor="#e40d0000"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/montserratlight"
+        android:text="Login"
+        android:layout_marginTop="40dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginbtn" />
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/loginbtn"
+        android:fontFamily="@font/montserratlight"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Sign Up"/>
+
+
+</RelativeLayout>
